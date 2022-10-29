@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #EAEAEA;
+  --secondary-color: #3C4048;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: var(--secondary-color);
+  color: #171717;
+  transition: all 0.2s ease-in-out;
+}
+
+body * {
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  max-width: 1200px;
+  background: var(--primary-color);
+  margin: 0 auto;
+  box-shadow: 3px 2px 3px #00000071;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-height: 90vh;
+}
+
+
+
+.todo-input {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: calc(100% - 10px);
+  padding: 7px 5px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: white;
+  margin: 5px 0;
+  border: 1px solid rgb(46, 46, 46);
+}
+
+button {
+  width: 100%;
+  padding: 7px 5px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: white;
+  margin: 5px 0;
+  border: 1px solid rgb(46, 46, 46);
+}
+
+button:hover,
+input:hover,
+textarea:hover {
+  background: #f5f5dc7f;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid var(--secondary-color);
+  background: #f5f5dc7f;
+}
+
+.todos {
+  padding: 1rem 0;
+}
+
+.todo-item {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.todo-item .todo-body {
+  background: white;
+  margin: 5px;
+  box-shadow: 1px 1px 3px gray;
+  display: flex;
+  justify-content: center;
+  color: rgb(21, 21, 21);
+  border-radius: 10px;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.todo-item .todo-body .todo-actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-item .todo-body .todo-actions-item {
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.todo-item .todo-body .todo-actions input {
+  width: 40px;
+}
+
+.todo-item .todo-body:hover {
+  background: #f5f5dc7f;
+}
+
+.todo-item .todo-body .todo-title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.todo-item .todo-body .todo-description {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+#noFound{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
